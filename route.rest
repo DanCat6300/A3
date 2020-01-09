@@ -1,0 +1,29 @@
+GET http://localhost:9000/students
+
+###
+
+GET http://localhost:9000/students/5e0d58a90bf7632e985fd60e
+
+###
+
+POST http://localhost:9000/students
+Content-Type: application/json
+
+{
+    "studentID": "s7761620",
+    "studentName": "Mona Frazier",
+    "studentYear": "2018"
+}
+
+###
+
+DELETE http://localhost:9000/students/5e0d53974bd4f045844aa285
+
+###
+
+PATCH http://localhost:9000/students/5e0d58a90bf7632e985fd60e
+Content-Type: application/json
+
+{
+    "studentName": "Marvin Carlson"
+}
